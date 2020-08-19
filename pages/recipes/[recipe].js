@@ -4,7 +4,7 @@ import styles from '../../styles.module.css'
 
 const Code = (p) => <code className={styles.inlineCode} {...p} />
 
-export default function News() {
+export default function Recipes() {
   const { asPath, route, query } = useRouter()
 
   return (
@@ -16,8 +16,8 @@ export default function News() {
           This page was rendered by <Code>{`pages${route}.js`}</Code>.
         </p>
         <p>
-          The query <Code>slug</Code> for this page is:{' '}
-          <Code>{JSON.stringify(query.slug)}</Code>
+          The query <Code>recipe</Code> for this page is:{' '}
+          <Code>{JSON.stringify(query.recipe)}</Code>
         </p>
         <Link href="/">
           <a> &larr; Back home</a>
